@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.nav {
+  background-color: #ff5733;
+  color: white;
+  display: flex; /*로고 & 메뉴 정렬*/
+  justify-content: space-between; /*가로 양끝*/
+  align-items: center; /*세로*/
+  padding: 20px;
+}
+
+.nav ol {
+  display: flex; /*ol 안에 있는 li들을 가로로 배치*/
+  list-style: none;
+}
+
+.nav ol li {
+  margin: 0 10px;
+}
+
+.nav ol li a {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  background: url('img/header.jpeg');
+  height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 150px;
+}
+
+.header .box {
+  background: rgba(255, 255, 255, 0.4);
+  border: solid white 5px;
+  padding: 40px 100px 200px 40px; /*상 우 하 좌*/
+}
+
+.button {
+  margin: 10 0;
+}
+
+/* Deals Section */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.flex .box1, .flex .box2, .flex .box3, .flex .box4 {
+  padding: 15px;
+  border: 5px solid #ff5733;
+  width: 22%;
+  font-size: 14px;
+}
+
+.flex .box1 h1, 
+.flex .box2 h1, 
+.flex .box3 h1, 
+.flex .box4 h1 {
+  background: #ff5733; 
+  margin: -20px -18px 10px -18px; /* 음수 마진=> 확장 */
+  padding: 10px;
+}
+
+
+/* Main Content */
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.main-left, .main-right {
+  width: 48%;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 20px;
+}
+
+.footer div {
+  background-color: white;
+  padding: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+  padding: 0 0 30 0;
+}
+
+.fbox1 h1, 
+.fbox2 h1, 
+.fbox3 h1, 
+.fbox4 h1 {
+  background: #ff5733; 
+  padding: 10px;
+}
+
+.fbox1 p, 
+.fbox2 p, 
+.fbox3 p, 
+.fbox4 p {
+  padding: 20px;
+  font-size: 20px;
+}
